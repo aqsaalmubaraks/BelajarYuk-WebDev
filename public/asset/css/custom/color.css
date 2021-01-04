@@ -1,0 +1,29 @@
+:root {
+	--color-primary     :#53CD9F;
+	--color-primary-dark:#2c9e73;
+	--color-primary-soft:#8dffd538;
+	--color-warning     :#ffb300;
+	--color-danger      :#f44336;
+}
+
+.primary {
+	background-color: var(--color-primary) !important;
+}
+
+.primary-dark {
+	background-color: var(--color-primary-dark) !important;
+}
+
+
+
+
+
+
+
+.primary-text {
+	color: var(--color-primary) !important;
+}
+
+.primary-dark-text {
+	color: var(--color-primary-dark) !important;
+}

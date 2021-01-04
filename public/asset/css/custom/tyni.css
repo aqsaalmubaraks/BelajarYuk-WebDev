@@ -1,0 +1,23 @@
+/*TYNY CSS*/
+
+.tox-notifications-container {
+	display: none !important;
+}
+
+.tox-statusbar {
+	display: none !important;
+}
+
+.tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+	border: 0 !important;
+}
+
+.text-responsive p img {
+	max-width: -webkit-fill-available;
+	height: 100%;
+}
+
+.text-desc p img {
+	max-width: -webkit-fill-available;
+	height: 100%;
+}

@@ -1,0 +1,186 @@
+.collapsible > li .collapsible-header:hover{
+	background-color: var(--color-primary-soft);
+}
+
+.collapsible.standard {
+	border: 0;
+	box-shadow: var(--elevation-z8) !important;
+	border-radius: 8px;
+}
+
+.collapsible.standard > li:first-child {
+	border-radius: 8px 8px 0 0;
+}
+
+.collapsible.standard > li:first-child .collapsible-header {
+	border-radius: 8px 8px 0 0;
+}
+
+.collapsible.standard > li:last-child {
+	border-radius: 0 0 8px 8px;
+}
+
+.collapsible.standard > li:last-child .collapsible-header {
+	border-radius: 0 0 8px 8px;
+	border-bottom: 0;
+}
+
+.collapsible.standard > li.active:last-child .collapsible-header {
+	border-radius: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.collapsible.standard > li.active:last-child .collapsible-body {
+	border-radius: 0 0 8px 8px;
+}
+
+
+
+
+
+
+.collapsible.border {
+	box-shadow: none;
+	border-radius: 8px;
+}
+
+.collapsible.border > li:first-child {
+	border-radius: 8px 8px 0 0;
+}
+
+.collapsible.border > li:first-child .collapsible-header {
+	border-radius: 8px 8px 0 0;
+}
+
+.collapsible.border > li:last-child {
+	border-radius: 0 0 8px 8px;
+}
+
+.collapsible.border > li:last-child .collapsible-header {
+	border-radius: 0 0 8px 8px;
+}
+
+.collapsible.border > li.active:last-child .collapsible-header {
+	border-radius: 0;
+}
+
+.collapsible.border > li.active:last-child .collapsible-body {
+	border-radius: 0 0 8px 8px;
+}
+
+
+
+
+.collapsible.right-icon li .collapsible-header {
+	display: inherit;
+}
+
+.collapsible.right-icon li .collapsible-header span {
+	position: absolute;
+}
+
+.collapsible.right-icon li .collapsible-header i.right {
+	transition: 0.24s transform;
+}
+
+.collapsible.right-icon li.active .collapsible-header i.right {
+	transform: rotate(180deg);
+}
+
+
+
+
+
+.collapsible.popup {
+	border: 0;
+}
+
+.collapsible.popup > li:last-child .collapsible-header {
+	border-bottom: 1px solid #ddd;
+}
+
+.collapsible.popup li .collapsible-header{
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-top:1px solid #ddd;
+	border-bottom: 0;
+	border-bottom: 0;
+}
+
+
+.collapsible.popup > li.active:before {
+	content: '';
+	position: relative;
+	border-top: 1px solid #ddd;
+	display: block;
+	width: 100%;
+	top: -1rem;
+}
+
+.collapsible.popup > li.active:first-child:before {
+	content: '';
+	position: relative;
+	border: 0 !important;
+	display: block;
+	width: 100%;
+	top: -1rem;
+}
+
+.collapsible.popup > li {
+	margin-bottom: 0;
+	margin-top: 0;
+	transition: 0.1s all;
+}
+
+.collapsible.popup > li.active {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	box-shadow: var(--elevation-z3);
+	border-radius: 8px;
+}
+
+.collapsible.popup > li.active .collapsible-body {
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-radius: 0 0 8px 8px;
+}
+
+.collapsible.popup > li.active .collapsible-header {
+	border-bottom: 1px solid #ddd;
+	border-radius: 8px 8px 0 0;
+}
+
+.collapsible.popup > li.active:last-child {
+	margin-bottom: 0 !important;
+	margin-top: 1rem;
+	box-shadow: var(--elevation-z3);
+	border-radius: 8px;
+}
+
+.collapsible.popup > li.active:last-child .collapsible-body {
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-radius: 0 0 8px 8px;
+}
+
+.collapsible.popup > li.active:last-child .collapsible-header {
+	border-bottom: 1px solid #ddd;
+	border-radius: 8px 8px 0 0;
+}
+
+.collapsible.popup > li.active:first-child {
+	margin-bottom: 1rem;
+	box-shadow: var(--elevation-z3);
+	border-radius: 8px;
+	margin-top: 0 !important;
+}
+
+.collapsible.popup > li.active:first-child .collapsible-body {
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-radius: 0 0 8px 8px;
+}
+
+.collapsible.popup > li.active:first-child .collapsible-header {
+	border-bottom: 1px solid #ddd;
+}

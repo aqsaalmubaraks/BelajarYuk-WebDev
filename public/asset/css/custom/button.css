@@ -1,0 +1,83 @@
+
+/*hover custom*/
+.btn.primary:hover {
+	background-color: var(--color-primary-dark);
+}
+
+
+/*BUTTON OULINED*/
+.btn.outlined {
+	box-shadow: none;
+	border: 2px solid #000;
+	background-color: transparent !important;
+	color: #000;
+	font-weight: 700;
+	transition: 0.2s all;
+}
+
+.btn.outlined:hover {
+	background-color: #000 !important;
+	color: #fff;
+}
+
+
+.btn.outlined.primary {
+	border: 2px solid var(--color-primary);
+	color: var(--color-primary);
+}
+
+.btn.outlined.primary:hover {
+	background-color: var(--color-primary) !important;
+	color: #fff;
+}
+
+.btn.outlined.primary-dark {
+	border: 2px solid var(--color-primary-dark);
+	color: var(--color-primary-dark);
+}
+
+.btn.outlined.primary-dark:hover {
+	background-color: var(--color-primary-dark) !important;
+	color: #fff;
+}
+
+.btn.outlined.danger {
+	border: 2px solid var(--color-danger);
+	color: var(--color-danger);
+}
+
+.btn.outlined.danger:hover {
+	background-color: var(--color-danger) !important;
+	color: #fff;
+}
+
+.btn.outlined.warning {
+	border: 2px solid var(--color-warning);
+	color: var(--color-warning);
+}
+
+.btn.outlined.warning:hover {
+	background-color: var(--color-warning) !important;
+	color: #fff;
+}
+
+
+/*BUTTON FLAT ICON*/
+.btn-floating.btn-flat i {
+	color: #343434 !important
+}
+
+.btn-floating.btn-flat:hover {
+	background-color: #eee
+}
+
+
+
+
+.collapsible-header a.btn-floating {
+	bottom: 8px;
+}
+
+.collapsible-header a.btn-floating i {
+	padding-left: 8px;
+}

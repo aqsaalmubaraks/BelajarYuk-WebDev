@@ -1,0 +1,72 @@
+.card-panel.outlined {
+	box-shadow: none;
+	border: 2px solid #eee;
+	border-radius: 8px;
+}
+
+.card-panel.outlined:hover {
+	box-shadow: var(--elevation-z8);
+}
+
+.card.outlined {
+	box-shadow: none;
+	border: 2px solid #eee;
+	border-radius: 8px;
+}
+
+.card.outlined:hover {
+	box-shadow: var(--elevation-z8);
+}
+
+.card-title {
+	padding: 1rem;
+	border-bottom: 1px solid #eee
+}
+
+.card-title h1,
+.card-title h2,
+.card-title h3,
+.card-title h4,
+.card-title h5,
+.card-title h6 {
+	margin: 0;
+}
+
+a .card{
+	color: #000;
+}
+
+.card-title .title {
+	color: #000;
+	display: grid
+}
+
+.card-title .menu {
+	position: relative;
+	left: 6px;
+	float: right;
+}
+
+.card-title .title h6 {
+	display: block;
+	overflow: hidden; 
+	white-space: nowrap;
+	line-height: 2.5rem;
+	text-overflow: ellipsis;
+	color: var(--dark2);
+	font-weight: 400;
+	padding-right: 1rem;
+}
+
+.card-title .menu .dropdown-trigger {
+	position: relative;
+	float: right;
+	left: 0; 
+	left: 10px
+}
+
+.dropdown-content {
+	box-shadow: var(--elevation-z8) !important;
+	border-radius: 4px;
+	font-weight: 600
+}

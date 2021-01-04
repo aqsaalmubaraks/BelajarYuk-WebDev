@@ -1,0 +1,14 @@
+.badges{
+	background-color: transparent;
+	border-radius: 4px;
+	display: inline-flex;
+}
+
+.badges i {
+	padding: 0 0.5rem 0 0;
+	font-size: 20px;
+}
+
+.badges.flat {
+	background-color: transparent;
+}
