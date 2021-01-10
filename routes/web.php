@@ -16,6 +16,13 @@ Route::prefix('siswa')->middleware('auth:siswa')->group(function () {
 		Route::get('/setting/{id}', 'SiswaController@setting_kelas')->name('siswa.setting_kelas');
 		Route::get('/rekap/{id}', 'SiswaController@rekap')->name('siswa.rekap');
 	});
+
+	Route::prefix('be')->group(function () {
+		Route::prefix('jawaban')->group(function () {
+			Route::post('/store', 'JawabanController@store')->name('siswa.jawaban.store');
+			Route::post('/edit/{id}', 'JawabanController@edit')->name('siswa.jawaban.edit');
+		});
+	});	
 });
 
 Route::prefix('guru')->middleware('auth:guru')->group(function () {
@@ -31,5 +38,21 @@ Route::prefix('guru')->middleware('auth:guru')->group(function () {
 		Route::get('/setting/{id}', 'GuruController@setting_kelas')->name('guru.setting_kelas');
 		Route::get('/rekap/{id}', 'GuruController@rekap')->name('guru.rekap');
 	});
-	
+
+	Route::prefix('be')->group(function () {
+		Route::prefix('materi')->group(function () {
+			Route::post('/store', 'MateriController@store')->name('guru.materi.store');
+			Route::get('/delete/{id}', 'MateriController@delete')->name('guru.materi.delete');
+			Route::post('/edit/{id}', 'MateriController@edit')->name('guru.materi.edit');
+		});
+		Route::prefix('tugas')->group(function () {
+			Route::post('/store', 'TugasController@store')->name('guru.tugas.store');
+			Route::get('/delete/{id}', 'TugasController@delete')->name('guru.tugas.delete');
+			Route::post('/edit/{id}', 'TugasController@edit')->name('guru.tugas.edit');
+		});
+		Route::prefix('nilai')->group(function () {
+			Route::post('/jawaban/nilai/{id}', 'JawabanController@nilai')->name('guru.jawaban.nilai');
+		});
 	});
+	
+});
